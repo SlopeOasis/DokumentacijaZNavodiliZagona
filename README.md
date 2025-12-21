@@ -64,7 +64,21 @@ Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdel
 ## Dobre prakse
 
 - Vse mikrostoritve so dodatno bolj temeljito dokumentirane znotraj njihovih repozitorijev `README.md`. (Oblika je mogoče malo nejasna, uporabljal sem jih za sprotno beleženje in dokumentiranje med razvojem, morda celo ne najbolj natančna). Ima opisane funkcionalnosti, uporabljene tehnologije, podrobnejša navodila za zagon, entitete, API končnice in podobno.
-- Med razvojom so bile sproti glede na predavanja upoštevane dobre prakse razvoja, kot so ločevanje odgovornosti, uporaba DTO-jev, debug kode/pozivnikov, repozitorijev, ustrezno ravnanje z napakami, validacije vhodnih podatkov, uporaba okoljskih spremenljivk za konfiguracije in podobno.
+
+### Med razvojom so bile sproti glede na predavanja upoštevane dobre prakse razvoja, kot so:
+
+- ločevanje odgovornosti, 
+- uporaba DTO-jev, 
+- debug kode/pozivnikov, 
+- repozitorijev, 
+- ustrezno ravnanje z napakami, 
+- validacije vhodnih podatkov, 
+- uporaba okoljskih spremenljivk za konfiguracije,
+- SAS tokene za dostop do Azure Blob Storage (casovno omejeni dostop),
+- JWT avtentikacija z uporabo Clerk storitve v vseh mikroservisih povezanih s frontend-om,
+- logična struktura projektov in map,
+- jasno poimenovane datoteke, funkcije, sremenljivke,
+- in ostalo.
 
 ---
 
