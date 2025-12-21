@@ -54,10 +54,10 @@ Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdel
 - **docker/** – Docker Compose konfiguracije
 - **DokumentacijaZNavodiliZagona/** – navodila in dokumentacija
 
-## Nestandardna uporabljena orodja
+## Nestandardna uporabljena orodja / Zunanji API / Knjižnice
 
 - **frontend/** – Vercel V0 (osnovna oblika uporabniškega vmesnika), Metamask (kriptodenarnica), Clerk (avtentikacija, specializirane UI komponente)
-- **payment/** – Web3j (interakcija s kriptovalutami), Clerk SDK (JWT avtentikacija)
+- **payment/** – Web3j (interakcija s kriptovalutami), Clerk SDK (JWT avtentikacija), CoinGecko API (pridobivanje cen POL/USDC 1:1 POL/USD)
 - **post/** – Azure Blob Storage (shranjevanje datotek), Azurite (lokalni emulator za Azure Blob Storage), Clerk SDK (JWT avtentikacija)
 - **user/** – Clerk SDK (JWT avtentikacija)
 
