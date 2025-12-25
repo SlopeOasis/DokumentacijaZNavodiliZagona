@@ -1,5 +1,18 @@
 # Navodila za zagon v oblaku
 
+## -1. AMAZING DISCLAIMER
+
+Saj nisem mogel najti nastavitev s katerimi bi vspostavil AKS cluster, problemi so bili z vezrijami, cenami in nedostopnosti node poolov glede na moj studentski plan, sem se odločil za uporabo AVM (Virtual Machine).
+
+Pri nastavitvah VMa in celetnega procesa objave mikrostoritev v njem, sem si pomagal z raznimi viri, ampak najbolj uporaben je bil:
+
+- https://github.com/Project-Fritata/fritata-backend
+
+Iskreno hvala avtorju @kremec, za vs research, ki je bil potreben za vzpostavitev celotne infrastrukture. Brez tega repozitorija in njegove dokumentacije, ta del projekta najvrjetneje ne bi bil zaključen do roka.
+
+Hvala <3
+
+
 ## 0. Skupne zahteve
 
 - Azure račun
@@ -171,6 +184,11 @@ POMEMBNO: Projekt ustvarite tako da poveđete github repozitorij frontenda. Nast
 - CLERK_SECRET_KEY = <TVOJ_CLERK_SECRET_KEY>
 
 In toj to, Vercel poskrbi za ostale build nastavitve in zagon. Provida tudi SSL certifikate avtomatsko. Prav tako je optimiziran za next.js aplikacije kot je ta.
+
+## 7. Posodobitev dovoljenih povezav ki dostopajo do mikroservisov
+V vsakem repozitoriju mikrostoritev (payment, post, user) posodobite dovoljene domene ki lahko dostopajo do mikroservisov preko CORS nastavitev. To naredite tako da v datoteki `WebConfig.java` ki je v mapi `src/main/java/com/example/<service>/config/` posodobite katere domene so dovoljene., ta mora biti IP vašega Vercel frontenda.
+
+```java
 
 
 ---
