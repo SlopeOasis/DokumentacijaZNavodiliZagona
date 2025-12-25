@@ -1,4 +1,5 @@
 # Navodila za zagon v oblaku
+azure seizure confirmed
 
 ## -1. AMAZING DISCLAIMER
 
