@@ -191,9 +191,6 @@ In toj to, Vercel poskrbi za ostale build nastavitve in zagon. Provida tudi SSL 
 ## 7. Posodobitev dovoljenih povezav ki dostopajo do mikroservisov
 V vsakem repozitoriju mikrostoritev (payment, post, user) posodobite dovoljene domene ki lahko dostopajo do mikroservisov preko CORS nastavitev. To naredite tako da v datoteki `WebConfig.java` ki je v mapi `src/main/java/com/example/<service>/config/` posodobite katere domene so dovoljene., ta mora biti IP vašega Vercel frontenda.
 
-```java
-
-
 ---
 
 # Navodila za lokalni zagon
@@ -202,6 +199,7 @@ Za enostavni lokalni zagon in zaustavitev vseh storitev sem naredil skripti `run
 Te skripti kopirajte v glavno mapo projekta, kjer se nahajajo mape repozitorijev posameznih mikroservisov, drontenda in mape z Docker konfiguracijami.
 
 primer strukture glavne mape projekta:
+
 ```
 main-folder/
 │── frontend/
