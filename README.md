@@ -145,6 +145,7 @@ Na vaši VM ustvarite sledečo strukturo map in datotek:
 
 Vse opisne datoteke naj imajo enako vsebino kot jo imajo v mapah `/k8s/` repozitorijev.
 POMEMBNO: Poskrbite, da so vse okoljske spremenljivke in nastavitve v datotekah `secrets` in `configmap` ustrezno nastavljene. Teh je kar veliko, vsi repozitoriji imajo `example` datoteke z opisi potrebnih vrednosti.
+POMEMBNO 2: side notice, mors ustvart `post-blob-secret.yaml` in `payment-service-secrets.yaml` lokalno po examplu poleg vseh ostalih ti zelo pomembni in največkrat povzročita error če sta pozablejni.
 
 V osnovnih repozitorijih nastavite ustrezne vrednost db konfiguracij in spremenljivk glede na vašo Azure strukturo.
 
