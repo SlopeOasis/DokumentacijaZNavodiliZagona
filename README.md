@@ -39,6 +39,7 @@ V azure portalu ustvarite naslednje storitve:
 ## 2. Zagon in osnovna konfiguracija VM
 
 Povežite se na vašo VM preko SSH in izvedite naslednje korake:
+`.pem` datoteko dobite ob ustvarjanju VM-ja v Azure portalu.
 
 ```bash
 ssh -i <PATH TO .pem FILE> <USERNAME>@<PUBLIC VM IP>
