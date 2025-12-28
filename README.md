@@ -257,13 +257,13 @@ Za zaustavitev vseh storitev naenkrat:
 
 ## 1. Tehnična dokumentacija
 
-## Opis projekta
+### Opis projekta
 
 Projekt je sestavljen iz več mikroservisov (frontend, payment, post, user), ki skupaj tvorijo aplikacijo.
 
 Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdelkov preko kriptovalut.
 
-## Struktura projekta
+### Struktura projekta
 
 - **frontend/** – uporabniški vmesnik (Next.js, Tailwind CSS, shadcn/ui)
 - **payment/** – mikroservis za plačila (Java, Spring Boot, Web3j, PostgreSQL)
@@ -272,14 +272,14 @@ Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdel
 - **docker/** – Docker Compose konfiguracije
 - **DokumentacijaZNavodiliZagona/** – navodila in dokumentacija
 
-## Nestandardna uporabljena orodja / Zunanji API / Knjižnice
+### Nestandardna uporabljena orodja / Zunanji API / Knjižnice
 
 - **frontend/** – Vercel V0 (osnovna oblika uporabniškega vmesnika), Metamask (kriptodenarnica), Clerk (avtentikacija, specializirane UI komponente)
 - **payment/** – Web3j (interakcija s kriptovalutami), Clerk SDK (JWT avtentikacija), CoinGecko API (pridobivanje cen POL/USDC 1:1 POL/USD)
 - **post/** – Azure Blob Storage (shranjevanje datotek), Azurite (lokalni emulator za Azure Blob Storage), Clerk SDK (JWT avtentikacija)
 - **user/** – Clerk SDK (JWT avtentikacija)
 
-## Dobre prakse
+### Dobre prakse
 
 - Vse mikrostoritve so dodatno bolj temeljito dokumentirane znotraj njihovih repozitorijev `README.md`. (Oblika je mogoče malo nejasna, uporabljal sem jih za sprotno beleženje in dokumentiranje med razvojem, morda celo ne najbolj natančna). Ima opisane funkcionalnosti, uporabljene tehnologije, podrobnejša navodila za zagon, entitete, API končnice in podobno.
 
@@ -296,8 +296,8 @@ Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdel
 - JWT avtentikacija z uporabo Clerk storitve v vseh mikroservisih povezanih s frontend-om,
 - logična struktura projektov in map,
 - jasno poimenovane datoteke, funkcije, sremenljivke,
-- in ostalo.
+- in druge.
 
 ---
 
-*Zadnja posodobitev: 21. 12. 2025*
+*Zadnja posodobitev: 28. 12. 2025*
