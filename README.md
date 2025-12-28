@@ -193,6 +193,26 @@ V vsakem repozitoriju mikrostoritev (payment, post, user) posodobite dovoljene d
 
 ---
 
+# Navodila za postavitev CI/CD pipeline-a
+
+## 1. Nastavitev CI/CD za GitHub Actions (vse mikrostoritve)
+
+V vsakem repozitoriju mikrostoritev (payment, post, user) že ustvarjen `.github/workflows/ci-cd.yml` datoteka z potrebno vsebino.
+
+Na vseh lastnih verzijah github repozitorijev, v nastavitvah repozitorija, pod "Secrets and variables" -> "Actions", dodajte naslednje skrivnosti (secrets):
+- ACR_LOGIN_SERVER (dobite iz Azure Container Registry-ja)
+- ACR_USERNAME (dobite iz Azure Container Registry-ja)
+- ACR_PASSWORD (dobite iz Azure Container Registry-ja)
+- VM_HOST (javna IP vašega VM)
+- VM_USER (uporabniško ime vaše VM)
+- VM_SSH_KEY (vsebina vaše `.pem` datoteke)
+
+## 2. Nastavitev CI/CD za Vercel (frontend)
+
+Za Vercel ni potrebno narediti nič, saj že sam, ob tem ko smo pri prešnjem delu ustvarili projekt in povezali github repozitorij, poskrbi za avtomatsko integracijo in deployment ob vsakem push-u v glavno vejo repozitorija.
+
+---
+
 # Navodila za lokalni zagon
 ## 1. Kopiranje skript za zagon in zaustavitev
 Za enostavni lokalni zagon in zaustavitev vseh storitev sem naredil skripti `runAll.bat` in `stopAll.bat`.
@@ -234,6 +254,8 @@ Za zaustavitev vseh storitev naenkrat:
 ---
 
 # Dokumentacija projekta
+
+## 1. Tehnična dokumentacija
 
 ## Opis projekta
 
