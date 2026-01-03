@@ -298,6 +298,15 @@ Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdel
 - jasno poimenovane datoteke, funkcije, sremenljivke,
 - in druge.
 
+
+## 2. Dokumentacija API-jev mikroservisov
+
+Dokumentacija API-jev je bila narejena s pomočjo orodja Swagger in je dostopna preko naslednjih URL-jev v lokalnem okolju, če so bile mokrostoritve zagnane lokalno glede na zgornja navodila:
+
+- **User Service**: `http://localhost:8080/swagger-ui/index.htm`
+- **Post Service**: `http://localhost:8081/swagger-ui/index.htm`
+- **Payment Service**: `http://localhost:8082/swagger-ui/index.htm`
+
 ---
 
-*Zadnja posodobitev: 28. 12. 2025*
+*Zadnja posodobitev: 3. 1. 2026*
