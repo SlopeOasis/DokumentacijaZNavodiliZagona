@@ -303,9 +303,9 @@ Aplikacija je enostavna pseudo-anonimna platforma za prodajanje digitalnih izdel
 
 Dokumentacija API-jev je bila narejena s pomočjo orodja Swagger in je dostopna preko naslednjih URL-jev v lokalnem okolju, če so bile mokrostoritve zagnane lokalno glede na zgornja navodila:
 
-- **User Service**: `http://localhost:8080/swagger-ui/index.htm`
-- **Post Service**: `http://localhost:8081/swagger-ui/index.htm`
-- **Payment Service**: `http://localhost:8082/swagger-ui/index.htm`
+- **User Service**: `http://localhost:8080/swagger-ui/index.html`
+- **Post Service**: `http://localhost:8081/swagger-ui/index.html`
+- **Payment Service**: `http://localhost:8082/swagger-ui/index.html`
 
 ---
 
